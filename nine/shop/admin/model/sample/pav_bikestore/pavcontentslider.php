@@ -1,0 +1,16 @@
+a:1:{i:0;a:10:{s:9:"layout_id";s:1:"1";s:8:"position";s:9:"slideshow";s:6:"status";s:1:"1";s:10:"sort_order";i:1;s:5:"width";s:3:"940";s:6:"height";s:3:"438";s:15:"image_navigator";s:1:"1";s:13:"navimg_weight";s:3:"176";s:13:"navimg_height";s:2:"81";s:12:"banner_image";a:5:{i:1;a:4:{s:5:"image";s:26:"data/slider/imgslider1.jpg";s:4:"link";s:1:"#";s:5:"title";a:3:{i:1;s:6:"Mauris";i:3;s:0:"";i:2;s:0:"";}s:11:"description";a:3:{i:1;s:409:"&lt;p&gt;Nulla a odio vel urna eleifend scrisque&amp;nbsp;&amp;nbsp;&amp;nbsp; Sed quam lorem ullamcorper vitae conse quat convallis quis odio Curabitur varius urna sed orci imperdiet eget accumsan leo dignissim elementum, ante erat sagittis rhoncus diam eget arcu tempor faucibus fringilla quam vulputate.&lt;/p&gt;
+
+&lt;p&gt;&lt;a class=&quot;bnt&quot; href=&quot;#&quot;&gt;Shop now&lt;/a&gt;&lt;/p&gt;
+";i:3;s:0:"";i:2;s:0:"";}}i:2;a:4:{s:5:"image";s:26:"data/slider/imgslider2.jpg";s:4:"link";s:1:"#";s:5:"title";a:3:{i:1;s:9:"Curabitur";i:3;s:0:"";i:2;s:0:"";}s:11:"description";a:3:{i:1;s:409:"&lt;p&gt;Nulla a odio vel urna eleifend scrisque&amp;nbsp;&amp;nbsp;&amp;nbsp; Sed quam lorem ullamcorper vitae conse quat convallis quis odio Curabitur varius urna sed orci imperdiet eget accumsan leo dignissim elementum, ante erat sagittis rhoncus diam eget arcu tempor faucibus fringilla quam vulputate.&lt;/p&gt;
+
+&lt;p&gt;&lt;a class=&quot;bnt&quot; href=&quot;#&quot;&gt;Shop now&lt;/a&gt;&lt;/p&gt;
+";i:3;s:0:"";i:2;s:0:"";}}i:3;a:4:{s:5:"image";s:26:"data/slider/imgslider1.jpg";s:4:"link";s:1:"#";s:5:"title";a:3:{i:1;s:8:"Sagittis";i:3;s:0:"";i:2;s:0:"";}s:11:"description";a:3:{i:1;s:409:"&lt;p&gt;Nulla a odio vel urna eleifend scrisque&amp;nbsp;&amp;nbsp;&amp;nbsp; Sed quam lorem ullamcorper vitae conse quat convallis quis odio Curabitur varius urna sed orci imperdiet eget accumsan leo dignissim elementum, ante erat sagittis rhoncus diam eget arcu tempor faucibus fringilla quam vulputate.&lt;/p&gt;
+
+&lt;p&gt;&lt;a class=&quot;bnt&quot; href=&quot;#&quot;&gt;Shop now&lt;/a&gt;&lt;/p&gt;
+";i:3;s:0:"";i:2;s:0:"";}}i:4;a:4:{s:5:"image";s:26:"data/slider/imgslider2.jpg";s:4:"link";s:1:"#";s:5:"title";a:3:{i:1;s:7:"Rhoncus";i:3;s:0:"";i:2;s:0:"";}s:11:"description";a:3:{i:1;s:409:"&lt;p&gt;Nulla a odio vel urna eleifend scrisque&amp;nbsp;&amp;nbsp;&amp;nbsp; Sed quam lorem ullamcorper vitae conse quat convallis quis odio Curabitur varius urna sed orci imperdiet eget accumsan leo dignissim elementum, ante erat sagittis rhoncus diam eget arcu tempor faucibus fringilla quam vulputate.&lt;/p&gt;
+
+&lt;p&gt;&lt;a class=&quot;bnt&quot; href=&quot;#&quot;&gt;Shop now&lt;/a&gt;&lt;/p&gt;
+";i:3;s:0:"";i:2;s:0:"";}}i:5;a:4:{s:5:"image";s:26:"data/slider/imgslider1.jpg";s:4:"link";s:1:"#";s:5:"title";a:3:{i:1;s:8:"Accumsan";i:3;s:0:"";i:2;s:0:"";}s:11:"description";a:3:{i:1;s:409:"&lt;p&gt;Nulla a odio vel urna eleifend scrisque&amp;nbsp;&amp;nbsp;&amp;nbsp; Sed quam lorem ullamcorper vitae conse quat convallis quis odio Curabitur varius urna sed orci imperdiet eget accumsan leo dignissim elementum, ante erat sagittis rhoncus diam eget arcu tempor faucibus fringilla quam vulputate.&lt;/p&gt;
+
+&lt;p&gt;&lt;a class=&quot;bnt&quot; href=&quot;#&quot;&gt;Shop now&lt;/a&gt;&lt;/p&gt;
+";i:3;s:0:"";i:2;s:0:"";}}}}}

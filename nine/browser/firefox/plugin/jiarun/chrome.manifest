@@ -1,0 +1,5 @@
+content   jiarun                 chrome/content/  contentaccessible=yes
+skin      jiarun   classic/1.0   chrome/skin/
+locale    jiarun   en-US         chrome/locale/en-US/
+overlay	chrome://browser/content/browser.xul	chrome://jiarun/content/ff-overlay.xul
+style	chrome://global/content/customizeToolbar.xul	chrome://jiarun/skin/overlay.css

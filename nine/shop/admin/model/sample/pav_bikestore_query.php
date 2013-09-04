@@ -1,0 +1,142 @@
+<?php 
+		$query['pavmegamenu'][]  = "	
+CREATE TABLE IF NOT EXISTS `".DB_PREFIX."megamenu` (
+  `megamenu_id` int(11) unsigned NOT NULL AUTO_INCREMENT,
+  `image` varchar(255) NOT NULL DEFAULT '',
+  `parent_id` int(11) NOT NULL DEFAULT '0',
+  `is_group` smallint(6) NOT NULL DEFAULT '2',
+  `width` varchar(255) DEFAULT NULL,
+  `submenu_width` varchar(255) DEFAULT NULL,
+  `colum_width` varchar(255) DEFAULT NULL,
+  `submenu_colum_width` varchar(255) DEFAULT NULL,
+  `item` varchar(255) DEFAULT NULL,
+  `colums` varchar(255) DEFAULT '1',
+  `type` varchar(255) NOT NULL,
+  `is_content` smallint(6) NOT NULL DEFAULT '2',
+  `show_title` smallint(6) NOT NULL DEFAULT '1',
+  `type_submenu` varchar(10) NOT NULL DEFAULT '1',
+  `level_depth` smallint(6) NOT NULL DEFAULT '0',
+  `published` smallint(6) NOT NULL DEFAULT '1',
+  `store_id` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `position` int(11) unsigned NOT NULL DEFAULT '0',
+  `show_sub` smallint(6) NOT NULL DEFAULT '0',
+  `url` varchar(255) DEFAULT NULL,
+  `target` varchar(25) DEFAULT NULL,
+  `privacy` smallint(5) unsigned NOT NULL DEFAULT '0',
+  `position_type` varchar(25) DEFAULT 'top',
+  `menu_class` varchar(25) DEFAULT NULL,
+  `description` text,
+  `content_text` text,
+  `submenu_content` text,
+  `level` int(11) NOT NULL,
+  `left` int(11) NOT NULL,
+  `right` int(11) NOT NULL,
+  PRIMARY KEY (`megamenu_id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 AUTO_INCREMENT=41 ;
+
+				
+			";
+			$query['pavmegamenu'][]  = "	
+CREATE TABLE IF NOT EXISTS `".DB_PREFIX."megamenu_description` (
+  `megamenu_id` int(11) NOT NULL,
+  `language_id` int(11) NOT NULL,
+  `title` varchar(255) NOT NULL,
+  `description` text NOT NULL,
+  PRIMARY KEY (`megamenu_id`,`language_id`),
+  KEY `name` (`title`)
+) ENGINE=MyISAM DEFAULT CHARSET=utf8;		
+					
+					";
+					
+	$query['pavmegamenu'][] = "	DELETE FROM ".DB_PREFIX ."megamenu WHERE 1=1 ";
+	$query['pavmegamenu'][] = "	DELETE FROM ".DB_PREFIX ."megamenu_description WHERE 1=1 ";
+	$query['pavmegamenu'][] = "	
+			INSERT INTO `".DB_PREFIX ."megamenu` (`megamenu_id`, `image`, `parent_id`, `is_group`, `width`, `submenu_width`, `colum_width`, `submenu_colum_width`, `item`, `colums`, `type`, `is_content`, `show_title`, `type_submenu`, `level_depth`, `published`, `store_id`, `position`, `show_sub`, `url`, `target`, `privacy`, `position_type`, `menu_class`, `description`, `content_text`, `submenu_content`, `level`, `left`, `right`) VALUES
+(1, '', 0, 2, NULL, NULL, NULL, NULL, NULL, '1', '', 2, 1, '1', 0, 1, 0, 0, 0, NULL, NULL, 0, 'top', NULL, NULL, NULL, NULL, -5, 34, 47),
+(20, '', 1, 0, NULL, NULL, NULL, '', '', '1', 'url', 0, 1, 'menu', 0, 1, 0, 1, 0, '?route=common/home', NULL, 0, 'top', 'homepage', NULL, '', '', 0, 0, 0),
+(21, '', 1, 0, NULL, NULL, NULL, '', '17', '1', 'category', 0, 1, 'menu', 0, 1, 0, 2, 0, 'Bike parts', NULL, 0, 'top', '', NULL, '', '', 0, 0, 0),
+(22, '', 1, 0, NULL, NULL, NULL, 'col1=3, col2=3, col3=6', '61', '3', 'category', 0, 1, 'menu', 0, 1, 0, 3, 0, '', NULL, 0, 'top', '', NULL, '', '', 0, 0, 0),
+(23, '', 1, 0, NULL, NULL, NULL, '', '34', '1', 'category', 0, 1, 'menu', 0, 1, 0, 4, 0, '', NULL, 0, 'top', '', NULL, '', '', 0, 0, 0),
+(24, '', 1, 0, NULL, NULL, NULL, '', '33', '1', 'category', 0, 1, 'menu', 0, 1, 0, 5, 0, '', NULL, 0, 'top', '', NULL, '', '', 0, 0, 0),
+(25, '', 1, 0, NULL, NULL, NULL, '', '60', '1', 'category', 0, 1, 'menu', 0, 1, 0, 6, 0, '', NULL, 0, 'top', '', NULL, '', '', 0, 0, 0),
+(26, '', 22, 1, NULL, NULL, NULL, '', '', '1', 'url', 0, 1, 'menu', 0, 1, 0, 1, 0, '#', NULL, 0, 'top', '', NULL, '', '', 0, 0, 0),
+(27, '', 22, 1, NULL, NULL, NULL, '', '', '1', 'url', 0, 1, 'html', 0, 1, 0, 2, 0, '#', NULL, 0, 'top', '', NULL, '', '&lt;ul&gt;\r\n	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Curabitur tempus&lt;/a&gt;&lt;/li&gt;\r\n	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Curabitur tempus&lt;/a&gt;&lt;/li&gt;\r\n	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Curabitur tempus&lt;/a&gt;&lt;/li&gt;\r\n	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Curabitur tempus&lt;/a&gt;&lt;/li&gt;\r\n	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Curabitur tempus&lt;/a&gt;&lt;/li&gt;\r\n	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Curabitur tempus&lt;/a&gt;&lt;/li&gt;\r\n	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Curabitur tempus&lt;/a&gt;&lt;/li&gt;\r\n&lt;/ul&gt;\r\n', 0, 0, 0),
+(28, '', 22, 1, NULL, NULL, NULL, '', '', '1', 'url', 0, 1, 'menu', 0, 1, 0, 99, 0, '#', NULL, 0, 'top', '', NULL, '', '', 0, 0, 0),
+(29, '', 28, 0, NULL, NULL, NULL, '', '', '1', 'html', 0, 1, 'menu', 0, 1, 0, 99, 0, '', NULL, 0, 'top', ' module', NULL, '&lt;div class=&quot;margin&quot;&gt;\r\n&lt;p&gt;&lt;img alt=&quot;&quot; src=&quot;image/data/img_category.jpg&quot; style=&quot;width: 425px; height: 135px;&quot; /&gt;&lt;/p&gt;\r\n\r\n&lt;h4&gt;Ante erat sagittis rhoncus diam eget arcu&lt;/h4&gt;\r\n\r\n&lt;p&gt;Ante erat sagittis rhoncus diam eget arcu tempor faucibus fringilla quam vulputate&lt;/p&gt;\r\n&lt;/div&gt;\r\n', '', 0, 0, 0),
+(30, '', 26, 0, NULL, NULL, NULL, '', '61', '1', 'category', 0, 1, 'menu', 0, 1, 0, 1, 0, '', NULL, 0, 'top', '', NULL, '', '', 0, 0, 0),
+(31, '', 26, 0, NULL, NULL, NULL, '', '17', '1', 'category', 0, 1, 'menu', 0, 1, 0, 2, 0, '', NULL, 0, 'top', '', NULL, '', '', 0, 0, 0),
+(32, '', 26, 0, NULL, NULL, NULL, '', '33', '1', 'category', 0, 1, 'menu', 0, 1, 0, 3, 0, '', NULL, 0, 'top', '', NULL, '', '', 0, 0, 0),
+(33, '', 26, 0, NULL, NULL, NULL, '', '60', '1', 'category', 0, 1, 'menu', 0, 1, 0, 4, 0, '', NULL, 0, 'top', '', NULL, '', '', 0, 0, 0),
+(34, '', 26, 0, NULL, NULL, NULL, '', '34', '1', 'category', 0, 1, 'menu', 0, 1, 0, 5, 0, '', NULL, 0, 'top', '', NULL, '', '', 0, 0, 0),
+(35, '', 23, 0, NULL, NULL, NULL, '', '24', '1', 'category', 0, 1, 'menu', 0, 1, 0, 1, 0, '', NULL, 0, 'top', '', NULL, '', '', 0, 0, 0),
+(36, '', 23, 0, NULL, NULL, NULL, '', '18', '1', 'category', 0, 1, 'menu', 0, 1, 0, 2, 0, '', NULL, 0, 'top', '', NULL, '', '', 0, 0, 0),
+(37, '', 23, 0, NULL, NULL, NULL, '', '20', '1', 'category', 0, 1, 'menu', 0, 1, 0, 3, 0, '', NULL, 0, 'top', '', NULL, '', '', 0, 0, 0),
+(38, '', 23, 0, NULL, NULL, NULL, '', '51', '1', 'product', 0, 1, 'menu', 0, 1, 0, 4, 0, '', NULL, 0, 'top', '', NULL, '', '', 0, 0, 0),
+(39, '', 27, 0, NULL, NULL, NULL, '', '', '1', 'url', 0, 1, 'html', 0, 1, 0, 1, 0, '', NULL, 0, 'top', '', NULL, '', '&lt;ul&gt;\r\n	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Curabitur tempus&lt;/a&gt;&lt;/li&gt;\r\n	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Curabitur tempus&lt;/a&gt;&lt;/li&gt;\r\n	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Curabitur tempus&lt;/a&gt;&lt;/li&gt;\r\n	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Curabitur tempus&lt;/a&gt;&lt;/li&gt;\r\n	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Curabitur tempus&lt;/a&gt;&lt;/li&gt;\r\n	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Curabitur tempus&lt;/a&gt;&lt;/li&gt;\r\n	&lt;li&gt;&lt;a href=&quot;#&quot;&gt;Curabitur tempus&lt;/a&gt;&lt;/li&gt;\r\n&lt;/ul&gt;\r\n', 0, 0, 0);
+
+	";
+	$query['pavmegamenu'][] = "	
+			INSERT INTO `".DB_PREFIX ."megamenu_description` (`megamenu_id`, `language_id`, `title`, `description`) VALUES
+(1, 1, 'ROOT', 'Menu Root'),
+(20, 3, 'Home', ''),
+(21, 1, 'Bike parts', ''),
+(21, 3, 'Bike parts', ''),
+(20, 1, 'Home', ''),
+(21, 2, 'Bike parts', ''),
+(22, 1, 'Bikes&amp;frames ', ''),
+(22, 3, 'Bikes&amp;frames ', ''),
+(22, 2, 'Bikes&amp;frames ', ''),
+(23, 3, 'Clothing', ''),
+(23, 1, 'Clothing', ''),
+(23, 2, 'Clothing', ''),
+(24, 3, 'Helmets', ''),
+(24, 1, 'Helmets', ''),
+(24, 2, 'Helmets', ''),
+(25, 3, 'Tyres&amp;weels', ''),
+(25, 1, 'Tyres&amp;weels', ''),
+(25, 2, 'Tyres&amp;weels', ''),
+(20, 2, 'Home', ''),
+(26, 3, 'Nulla a odio', ''),
+(26, 1, 'Nulla a odio', ''),
+(26, 2, 'Nulla a odio', ''),
+(27, 2, ' Sed quam lore', ''),
+(27, 1, ' Sed quam lore', ''),
+(28, 2, 'Siam eget arcu', ''),
+(28, 1, 'Siam eget arcu', ''),
+(29, 3, 'xcvzđfsg', ''),
+(29, 2, 'xcvzđfsg', ''),
+(29, 1, 'Quam vulputate', ''),
+(30, 1, 'Amet luctus libero', ''),
+(30, 3, 'Amet luctus libero', ''),
+(30, 2, 'Amet luctus libero', ''),
+(31, 1, 'Aenean placerat', ''),
+(31, 3, 'Aenean placerat', ''),
+(31, 2, 'Aenean placerat', ''),
+(32, 3, 'Hendrerit libero', ''),
+(32, 1, 'Hendrerit libero', ''),
+(32, 2, 'Hendrerit libero', ''),
+(33, 1, 'Luctus et eu', ''),
+(33, 3, 'Luctus et eu', ''),
+(33, 2, 'Luctus et eu', ''),
+(34, 1, 'Cliquet lectus rutrum', ''),
+(34, 3, 'Cliquet lectus rutrum', ''),
+(34, 2, 'Cliquet lectus rutrum', ''),
+(35, 1, 'Nullam aliquet ant', ''),
+(35, 3, 'Nullam aliquet ant', ''),
+(35, 2, 'Nullam aliquet ant', ''),
+(36, 1, 'Pellentesque mauris', ''),
+(36, 3, 'Pellentesque mauris', ''),
+(36, 2, 'Pellentesque mauris', ''),
+(37, 1, 'Quisque eu augue', ''),
+(37, 3, 'Quisque eu augue', ''),
+(37, 2, 'Quisque eu augue', ''),
+(38, 2, 'Item page', ''),
+(38, 1, 'Item page', ''),
+(38, 3, 'Item page', ''),
+(39, 3, 'Mentum quis tincidu', ''),
+(39, 1, 'Mentum quis tincidu', ''),
+(39, 2, 'Mentum quis tincidu', ''),
+(27, 3, ' Sed quam lore', ''),
+(28, 3, 'Siam eget arcu', '');
+	";
+?>
