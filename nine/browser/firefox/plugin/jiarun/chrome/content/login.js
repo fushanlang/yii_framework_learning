@@ -56,7 +56,14 @@ function cartDo(){
 }
 
 function checkoutDo(){
-    $('#submit_order').submit();
+    $('input[name=checkcode]').focus();
+    $('input[name=checkcode]').keydown(function(e){
+        var e = e || event,
+            keycode = e.which || e.keyCode;
+        if (keycode==13) {
+            $('#submit_order').submit();
+        }
+    });
 }
 
 function buynow(product_id,product_option_id,product_option_value_id){
@@ -77,7 +84,7 @@ function buynow(product_id,product_option_id,product_option_value_id){
                 }
             }
             if (json['success']) {
-                window.location.href="/checkout/cart";
+                window.location.href="/checkout/checkout";
             }
         }
     });
